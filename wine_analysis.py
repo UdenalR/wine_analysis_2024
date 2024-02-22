@@ -97,40 +97,21 @@ A 'volatile acidity' se refere à quantidade de ácido acético no vinho, que po
 '''
 
 import matplotlib.pyplot as plt
-import numpy as np
 
-# Dados
-acidez = sem_outliers_table['volatile acidity']
-
-# Calculando o histograma
+# Gere o gráfico de distribuição de acidez
 plt.figure(figsize=(10, 6))
-n, bins, _ = plt.hist(acidez, bins=30, edgecolor='black', alpha=0.75)
+plt.hist(sem_outliers_table['volatile acidity'], bins=30, color='skyblue', edgecolor='black')
+plt.title('Distribuição de Acidez')
+plt.xlabel('Volatile Acidity')
+plt.ylabel('Frequência')
+plt.grid(True)
+plt.show()
 
-# Mapeando os valores de acidez para o colormap
-valor_minimo = min(acidez)
-valor_maximo = max(acidez)
-
-# Função para mapear valores de acidez para cores
-def mapa_cores(valor):
-    proporcao = (valor - valor_minimo) / (valor_maximo - valor_minimo)
-    return 1 - proporcao  # Invertendo a proporção para obter o efeito desejado
-
-# Adicionando um gradiente de cores com base nos valores de acidez
-for i, p in enumerate(plt.gca().patches):
-    valor_acidez = (p.get_x() + p.get_width()) / 0.9  # Calculando o valor de acidez para o retângulo
-    cor = plt.cm.RdYlBu(mapa_cores(valor_acidez))
-    plt.setp(p, 'facecolor', cor)
-
-# Configurações do gráfico
-plt.title('Distribuição do Grau de Acidez pela taxa de Acidez Volátil', color='black')
-plt.xlabel('Volatile Acidity', color='black')
-plt.ylabel('Frequência', color='black')
-plt.grid(True, color='none', zorder=0)  # Define a grade atrás do histograma
-plt.gca().set_facecolor('white')
-plt.gca().spines['bottom'].set_color('black')
-plt.gca().spines['top'].set_color('black')
-plt.gca().spines['left'].set_color('black')
-plt.gca().spines['right'].set_color('black')
-plt.xticks(color='black')
-plt.yticks(color='black')
+# Gere o histograma da distribuição de acidez
+plt.figure(figsize=(10, 6))
+plt.hist(sem_outliers_table['volatile acidity'], bins=30, color='skyblue', edgecolor='black')
+plt.title('Histograma da Distribuição de Acidez')
+plt.xlabel('Volatile Acidity')
+plt.ylabel('Frequência')
+plt.grid(True)
 plt.show()
