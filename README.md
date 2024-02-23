@@ -1,5 +1,7 @@
 ﻿# Análise Estatística e Visualização de Dados 
-Código desenvolvido para tratamento, limpeza, processamento, preparo, análise estatística e visualização de dados com a base de dados [Red Wine Quality](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009) disponível no Kaggle. O projeto visou cumprir os requisitos de **Estatística**, do bootcamp de Ciência de Dados da **Ada Tech**, patrocinado pelo **Potência Tech**, do **iFood**. 
+Código desenvolvido para tratamento, limpeza, processamento, preparo, análise estatística e visualização de dados com a base de dados [Red Wine Quality](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009) disponível no Kaggle. 
+
+O projeto visou cumprir os requisitos de **Estatística**, do bootcamp de Ciência de Dados da **Ada Tech**, patrocinado pelo **Potência Tech**, do **iFood**. 
 
 
 O projeto foi realizado em fevereiro de 2024 e contou com a colaboração de 4 integrantes:
@@ -16,4 +18,4 @@ O projeto foi realizado em fevereiro de 2024 e contou com a colaboração de 4 i
 
 # Como rodar
 
-> Clique [aqui](https://github.com/UdenalR/wine_analysis_2024/blob/master/wine_analysis.ipynb) e veja as análises realizadas.
+> Clique [aqui](https://github.com/UdenalR/wine_analysis_2024/blob/master/wine_analysis.ipynb) e visualize as análises realizadas.
